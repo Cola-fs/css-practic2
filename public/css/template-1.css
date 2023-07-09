@@ -107,4 +107,33 @@
 
 .card-body {
     padding: 24 px;
+    text-align: center;
+}
+
+.card_block {
+    margin-bottom: 24px;
+    display: block;
+}
+
+.card_price_amount {
+    color: #212529;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.card_price_duration {
+    color: #6C757D;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.card_block:not(:last-of-type) {
+    margin-bottom: 12px;
+}
+
+.card-button {
+    display: block;
+    width: 100%;
+    font-size: 19px;
+    padding: 9px;
 }
