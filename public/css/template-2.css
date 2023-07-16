@@ -59,7 +59,7 @@
 
 
 
-.page_block:not(:last-of-type) {
+.page_block:not(:last-child) {
     margin-bottom: 80px;
 }
 
@@ -177,4 +177,137 @@ a.button:hover {
 
 .preview_category {
     font-weight: 700;
+}
+
+.list_title {
+    color: #212529;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+
+}
+
+.list_header {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #DEE2E6;
+    margin-bottom: 40px;
+}
+
+.category_button {
+    color: #6C757D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 32px;
+    border: 1px solid #6C757D;
+    padding: 10px 16px;
+    line-height: 100%;
+}
+
+.category_button:hover {
+    background: #6c757d0f;
+}
+
+.list_aside {
+    margin-left: 40px;
+}
+
+.category_list {
+    text-align: right;
+}
+
+.list>*:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.post {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #DEE2E6;
+}
+
+.post>*:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.category_button:not(:last-of-type) {
+    margin-right: 12px;
+}
+
+.post_title {
+    display: block;
+    color: #212529;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.post_info {
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.post-author {
+    color: #0050FF;
+}
+
+.post_description {
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.list_aside>*:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.about {
+    background: #F8F9FA;
+    padding: 24px;
+}
+
+
+
+.about_title {
+    color: #212529;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about_text {
+    color: #212529;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 170%;
+    margin: 0;
+}
+
+.about>*:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.link_list {
+    padding: 24px;
+
+}
+
+.link_title {
+    color: #212529;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.link_list>*:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.link_item {
+    color: #007BFF;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+}
+
+.link_item:hover {
+    text-decoration: underline;
 }
