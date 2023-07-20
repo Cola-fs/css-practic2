@@ -425,7 +425,7 @@ router.get('/template-3', function (req, res) {
       title: "template-3"
     },
     layout: 'template-3',
-    
+
     header: [
       {
         text: "Features",
@@ -477,8 +477,8 @@ router.get('/template-3', function (req, res) {
       button: "Sign up",
       href: "https://example.com/"
     },
-  
-    
+
+
     footer: [
       {
         title: "Features",

@@ -66,6 +66,9 @@
 .footer {
     padding: 24px 0;
     border-top: 1px solid #DEE2E6;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .footer_copyright {
@@ -310,4 +313,19 @@ a.button:hover {
 
 .link_item:hover {
     text-decoration: underline;
+}
+
+.flex-conteiner {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.flex-item {
+    width: 50%;
+    /* background: rgb(210, 199, 199); */
+
 }
