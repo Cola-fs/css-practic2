@@ -23,7 +23,17 @@
         <p class="hero_text">{{text}}</p>
 
     </div>
-    <img src="{{photo}}" alt="Hero image" class="hero_image">
+    <div class="hero_slider">
+        <div class="hero_icon hero_icon_left">
+            {{left}}
+        </div>
+        <img src="{{photo}}" alt="Hero image" class="hero_image">
+        <div class="hero_icon hero_icon_right">
+            {{right}}
+        </div>
+    </div>
+
+
 </div>
 {{/with}}
 
@@ -32,6 +42,14 @@
     {{> cardBlog data=this}}
 
     {{/each}}
+    
+</main>
+<main class="blog">
+    {{#each blog}}
+    {{> cardBlog data=this}}
+
+    {{/each}}
+    
 </main>
 
 {{#with form}}
