@@ -119,13 +119,14 @@
     display: flex;
     gap: 40px;
     align-items: flex-start;
+
 }
 
 .messages {
     display: flex;
     flex-direction: column;
-    max-width: 620px;
-    width: 100%;
+    /* max-width: 620px;
+    width: 100%; */
     background: var(--color-white);
     border-radius: var(--border-radius-d);
     box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.10);
@@ -191,8 +192,8 @@
 .form {
     display: flex;
     flex-direction: column;
-    max-width: 340px;
-    width: 100%;
+    /* max-width: 340px;
+    width: 100%; */
     background: var(--color-white);
     border-radius: var(--border-radius-d);
     box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.10);
@@ -266,12 +267,14 @@
     border: 1px solid #767676;
     border-radius: var(--border-radius-s);
 }
+
 .form_checkbox>input:checked~div {
     border: 1px solid var(--color-primary);
     border-radius: var(--border-radius-s);
     background-color: var(--color-primary);
 }
-.form_checkbox>label{
+
+.form_checkbox>label {
     color: var(--color-title);
     font-size: var(--font-d);
     cursor: pointer;
@@ -305,4 +308,29 @@
     font-size: var(--font-d);
     line-height: 150%;
     text-align: justify;
+}
+
+.advantages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 'msg msg form'
+        'adv adv adv';
+}
+
+.messages {
+    grid-area: msg;
+}
+
+.form {
+    grid-area: form;
+}
+
+.advantages {
+    grid-area: adv;
 }
