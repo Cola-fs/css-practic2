@@ -1,0 +1,15 @@
+<div class="articles_body">
+    {{#each data}}
+    <div>
+        <div class="articles_foto">
+            <img class="articles_img" src="{{photo}}" alt="">
+            <div class="articles_new">{{#if isNew}}NEW{{/if}} </div>
+        </div>
+        <div class="articles_name">{{name}}</div>
+        <p class="articles_description">{{description}}</p>
+        <a href="3" class="articles_read_link">Read All</a>
+
+    </div>
+
+    {{/each}}
+</div>
