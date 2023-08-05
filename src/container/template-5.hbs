@@ -39,31 +39,31 @@
             <input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="name" id="form_input_{{id}}">
             {{/each}}
         </div>
-    <div class="form_checkbox">
-        
-        <input type="checkbox" name="{{checkbox.name}}" id="{{checkbox.name}}">
-        <div></div>
-        <label for="{{checkbox.name}}">{{checkbox.label}}</label>
-    </div>
+        <div class="form_checkbox">
+
+            <input type="checkbox" name="{{checkbox.name}}" id="{{checkbox.name}}">
+            <div></div>
+            <label for="{{checkbox.name}}">{{checkbox.label}}</label>
+        </div>
 
         <button class="form_button" type="submit"> {{button}}</button>
 
         <p class="form_info">{{info}}</p>
     </form>
     {{/with}}
-
+    <div class="advantages">
+        {{#each advantages}}
+        <div>
+            <strong class="advantages_title">{{title}}</strong>
+            <p class="advantages_text">{{text}}</p>
+        </div>
+        {{/each}}
+    </div>
 </main>
 
 
 
-<div class="advantages">
-    {{#each advantages}}
-    <div>
-        <strong class="advantages_title">{{title}}</strong>
-        <p class="advantages_text">{{text}}</p>
-    </div>
-    {{/each}}
-</div>
+
 
 
 
