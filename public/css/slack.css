@@ -1,4 +1,4 @@
-@layer component, variant;
+
 :root {
   --color-white: #ffffff;
   --color-black: #000;
@@ -31,7 +31,7 @@
   src: url('/font/HelveticaNeueBold.ttf');
 }
 
-@layer component{
+
   .button {
     text-decoration: none;
     color: var(--color-black);
@@ -41,7 +41,7 @@
     text-align: center;
   }
 
-  @layer  variant{
+ 
     .button_primary {
       color: var(--color-white);
       background-color: var(--color-primary);
@@ -52,9 +52,9 @@
       color: var(--color-primary);
     }
 
-  }
+ 
 
-}
+
 
 body {
   font-family: 'HelveticaNeueBold', sans-serif;
@@ -63,7 +63,8 @@ body {
 
 
 .page {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .page_section {
@@ -95,6 +96,7 @@ body {
 
   display: grid;
   gap: var(--spacing-8);
+  
 }
 
 .hero_img {
@@ -142,21 +144,21 @@ body {
 
 .page_section_lite {
   background-color: var(--color-fhone);
-}
-.feature_section {
-  gap: var(--spacing-3);
+  
 }
 
-.feaure_header {
+
+.feature_header {
+  gap: var(--spacing-3);
   max-width: 500px;
   display: grid;
+ 
 }
 
 @media all and (width >= 1260px) {
   .page_content {
     max-width: var(--page-width-big);
-    background-color: aqua;
-  }
+     }
 }
 
 @media all and ((  width >= 1000px ) and (width < 1260px)) {
