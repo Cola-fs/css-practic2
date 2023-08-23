@@ -385,6 +385,18 @@ body {
   z-index: 1;
   padding: var(--spacing-1);
 }
+.hero {
+  display: grid;
+  gap: var(--spacing-3);
+  width: 100%;
+  max-width: 900px;
+  
+  color: var(--color-black);
+  height: min-content;
+}
+.cards_tu{
+  display: none;
+ }
 }
 
 @media all and (1000px > width) {
