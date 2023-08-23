@@ -397,6 +397,11 @@ body {
 .cards_tu{
   display: none;
  }
+ .content_conteiner_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-5);
+}
 }
 
 @media all and (1000px > width) {
