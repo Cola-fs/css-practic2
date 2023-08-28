@@ -43,6 +43,8 @@ body {
   --size-5: 32px;
 
   --radius-1: 4px;
+
+  --line-heigt: 1,5em;
 }
 
 @layer block {
@@ -61,6 +63,29 @@ body {
   .aside {
     padding: var(--spacing-5);
     background-color: var(--color-background-dark);
+    display: grid;
+    gap: var(--spacing-5);
+    align-content: flex-start;
+  }
+  .icon {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .nav-button {
+    display: flex;
+    gap: var(--spacing-1);
+    color: var(--color-white);
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .text-line{
+    line-height: var(--line-heigt);
+  }
+
+  .hover{
+    
   }
 }
 
@@ -73,8 +98,24 @@ body {
     color: var(--color-white);
     font-size: var(--size-3);
     padding-bottom: var(--spacing-4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  .aside__nav {
+    display: grid;
+    gap: var(--spacing-2);
+  }
+
+  .nav-button__icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .nav-button__text{
+    font-size: var(--size-2);
+    
   }
 }
+
 
 @layer mod {
   .page--dashboard {
