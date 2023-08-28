@@ -24,19 +24,29 @@
 <body>
 
     <div class="page page--dashboard">
-        <aside class="page__aside aside">
-            <div class="aside__logo">
+        <aside class="page__aside aside vertical">
+            <div class="aside__logo text--lite">
                 Sidebar
             </div>
-           <nav class="aside__nav">
-            <a href="#" class="nav-button nav-button--active hover">
+           <nav class="vertical vertical--small ">
+            <a href="#" class="nav-button nav-button--active click">
                 <span class="icon nav-button__icon" style="background-image: url(/svg/nav_menu/home.svg);"> </span>
-                <span class="nav-button__text">Home</span>
+                <span class="text text--lite ">Home</span>
+            </a>
+            <a href="#" class="nav-button  click">
+                <span class="icon nav-button__icon" style="background-image: url(/svg/nav_menu/orders.svg);"> </span>
+                <span class="text text--lite ">Orders</span>
+            </a>
+            <a href="#" class="nav-button  click">
+                <span class="icon nav-button__icon" style="background-image: url(/svg/nav_menu/products.svg);"> </span>
+                <span class="text text--lite ">Products</span>
             </a>
            </nav>
         </aside>
         <header class="header">
-            sfssfs
+            <div class="layout header__content text--small">
+                <input type="text" placeholder="Search" class="field header__search">
+            </div>
         </header>
         <main class="main">
             sfsf
