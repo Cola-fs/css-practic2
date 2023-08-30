@@ -24,7 +24,7 @@
 <body>
 
     <div class="page page--dashboard">
-        <aside class="page__aside aside vertical">
+        <aside class="page__aside aside vertical vertical--big">
             <div class="aside__logo text--lite">
                 Sidebar
             </div>
@@ -54,10 +54,179 @@
                     <span class="icon icon--header-settings icon--button icon--color-blue click"
                         style=" background-image: url(/svg/header-icon/settings.svg);"></span>
                 </div>
+                <div class="header__icon">
+                    <span class="icon icon--header icon--button icon--color-yellow-lite click"
+                        style=" background-image: url(/svg/header-icon/signal.svg);"></span>
+                    <span class="icon icon--header icon--button icon--color-blue-liter click"
+                        style=" background-image: url(/svg/header-icon/symbols.svg);"></span>
+                    <span class="icon icon--header icon--button icon--color-yellow-lite click"
+                        style=" background-image: url(/svg/header-icon/bell.svg);"></span>
+                </div>
             </div>
         </header>
         <main class="main">
-            sfsf
+            <div class="main__analytics layout vertical--big ">
+                <div class="analytics__box main__analytics--big box--color-perpl-lite">
+
+                    <span class="icon icon--main icon--button-big icon--color-perpl click"
+                        style=" background-image: url(/svg/main-icon/money.svg);"></span>
+                    <div class="analytics__content vertical--small">
+                        <div class="analytics__title text text--lite vertical--small">
+                            $500.00
+                        </div>
+                        <div class=" text analytics--text">
+                            Total earning
+                        </div>
+                    </div>
+                </div>
+                <div class="analytics__box main__analytics--big box--color-blu-lite">
+                    <span class="icon icon--main icon--button-big icon--color-blu-dark click"
+                        style=" background-image: url(/svg/main-icon/bag.svg);"></span>
+                    <div class="analytics__content vertical--small">
+                        <div class="analytics__title text text--lite vertical--small">
+                            $961
+                        </div>
+                        <div class=" text analytics--text">
+                            Total Order
+                        </div>
+                    </div>
+                </div>
+                <div class="analytics__box box--color-blu-lite analytics__box-horizont vertical--small">
+                    <span class="icon icon--main icon--button-big icon--color-blu-dark click"
+                        style=" background-image: url(/svg/main-icon/money.svg);"></span>
+                    <div class="analytics__content vertical--smallinger">
+                        <div class="title--small text text--lite ">
+                            $203k
+                        </div>
+                        <div class=" text analytics--text">
+                            Total Income
+                        </div>
+                    </div>
+                </div>
+                <div class="analytics__box  analytics__box-horizont vertical--small ">
+                    <span class="icon icon--main icon--button-big icon--color-yellow-lite  click"
+                        style=" background-image: url(/svg/main-icon/shop.svg);"></span>
+                    <div class="analytics__content vertical--smallinger">
+                        <div class="title--small text  ">
+                            $203k
+                        </div>
+                        <div class=" text text--color-oppacitty">
+                            Total Income
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main2 layout">
+                <div class="box__main2 vertical--big">
+                    <div class="text text--heading">Purchase list</div>
+                    <div class="divider">
+                        <hr>
+                    </div>
+                    <div class="purchase__list">
+                        <div class="analytics__content vertical--small">
+                            <div class="text">ID437661</div>
+                            <div class="text">May 11, 2023, 14:21</div>
+                        </div>
+                        <div class="analytics__content vertical--small">
+                            <div class="text">AirOn ProCam</div>
+                            <div class="text">7/8 USB Type-C</div>
+                        </div>
+                        <div class="analytics__content vertical--small">
+                            <div class="text">132.32 EUR</div>
+                            <div class="text text--warning">Not paid</div>
+                        </div>
+                        <div class="analytics__content vertical--small">
+                            <div class="text">Customer</div>
+                            <div class="text">robin@com.de</div>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <hr>
+                    </div>
+                    <div class="purchase__list">
+                        <div class="analytics__content vertical--small">
+                            <div class="text">ID437661</div>
+                            <div class="text">May 11, 2023, 14:21</div>
+                        </div>
+                        <div class="analytics__content vertical--small">
+                            <div class="text">PHILIPS Essentia</div>
+                            <div class="text">HD9200/90</div>
+                        </div>
+                        <div class="analytics__content vertical--small">
+                            <div class="text">543 USD</div>
+                            <div class="text text--success">Pay by Stripe</div>
+                        </div>
+                        <div class="analytics__content vertical--small">
+                            <div class="text">Customer</div>
+                            <div class="text">dima@com.ua</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box__main2 vertical--big">
+                    <div class="text text--heading">Payment</div>
+                    <div class="divider">
+                        <hr>
+                    </div>
+                    <div class="box__radio vertical--small">
+                        <div class="radio__payment click vertical--smallinger">
+                            <input type="radio" name="Payment" checked>
+                            <span class="text">Credit card</span>
+                        </div>
+                        <div class="radio__payment click vertical--smallinger">
+                            <input type="radio" name="Payment">
+                            <span class="text">Debit card</span>
+                        </div>
+                        <div class="radio__payment click vertical--smallinger">
+                            <input type="radio" name="Payment">
+                            <span class="text">PayPal</span>
+                        </div>
+                    </div>
+                    <div class="credit-card vertical--big">
+                        <div class="credit-card__content vertical--smallinger">
+                            <span class="text">Name on card</span>
+                            <input type="text" class="field field--payment  ">
+                        </div>
+                        <div class="credit-card__content vertical--smallinger">
+                            <span class="text">Credit card number</span>
+                            <input type="text" class="field field--payment ">
+                        </div>
+                        <div class="credit-card__content vertical--smallinger">
+                            <span class="text">Expiration</span>
+                            <input type="text" class="field field--payment ">
+                        </div>
+                        <div class="credit-card__content vertical--smallinger">
+                            <span class="text">CVV</span>
+                            <input type="text" class="field field--payment ">
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <hr>
+                    </div>
+                    <div class="adress vertical--big">
+                        <div class="credit-card__content vertical--smallinger">
+                            <span class="text">Country</span>
+
+                            <select name="adress" id="" class="field field--select click">
+                                <option value="">Choose...</option>
+
+                            </select>
+                        </div>
+                        <div class="credit-card__content vertical--smallinger">
+                            <span class="text">State</span>
+                            <select name="adress" id="" class="field field--select click text">
+                                <option value="" class="text">Choose...</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <hr>
+                    </div>
+                    <div class="button text text--lite icon--color-blue icon--button">
+                        Continue to checkout
+                    </div>
+                </div>
+            </div>
         </main>
 
     </div>
